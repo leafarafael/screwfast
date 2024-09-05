@@ -17,22 +17,15 @@ const englishProducts = await getCollection("products", ({ id }) => {
 });
 
 
-
-
 // Fetching all the product related content and sorting it by main.id
 const product: CollectionEntry<"products">[] = englishProducts.sort(
   (a: CollectionEntry<"products">, b: CollectionEntry<"products">) =>
-    a.data.main.id - b.data.main.id,
+    a.data.main.price - b.data.main.price,
 );
-
-
-
 
 // Define variables for page content
 const title: string = "Gold and Treasure Detectors";
 const subTitle: string ="Dig deeper, dig less trash and find more treasure than ever before";
-
-
 
 // Testimonial data that will be rendered in the component
 const testimonials = [

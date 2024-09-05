@@ -1,13 +1,14 @@
 ---
-title: "Excalibur II"
-description: "Top underwater performance" 
+title: "Garrett AT Gold"
+description: "Ultimate precision, ultimate control" 
+
 main:
-  id: 11
-  price: 5000
+  id: 13
+  price: 2500
   content: |
     Introducing the SF-AB A765 Assorted Screw Set – the ultimate solution for your screw fastening needs. This comprehensive set includes a wide variety of screws meticulously curated to tackle various projects with ease and precision.
-  imgCard: "@/images/excalibur.png"
-  imgMain: "@/images/excalibur.png"
+  imgCard: "@/images/garrett-at-gold.png"
+  imgMain: "@/images/garrett-at-gold.png"
   imgAlt: "Mockup boxes of assorted screw set"
 tabs:
   - id: "tabs-with-card-item-1"
@@ -55,5 +56,5 @@ tableData:
 blueprints:
   first: "@/images/blueprint-1.avif"
   second: "@/images/blueprint-2.avif"
-slug: excalibur
+slug: garrett-at-gold
 ---

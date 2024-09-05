@@ -1,9 +1,10 @@
 ---
 title: "Vanquish 540"
 description: "Perfect for anyone starting out or stepping up their detecting game" 
-price: "AED 1,800"
+
 main:
   id: 9
+  price: 2000
   content: |
     Introducing the SF-AB A765 Assorted Screw Set – the ultimate solution for your screw fastening needs. This comprehensive set includes a wide variety of screws meticulously curated to tackle various projects with ease and precision.
   imgCard: "@/images/vanquish-540.png"

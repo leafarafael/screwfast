@@ -3,6 +3,7 @@
 import { Image } from "astro:assets";
 import Icon from "@components/ui/icons/Icon.astro";
 import type { CollectionEntry } from "astro:content";
+import PriceButton from "@components/ui/buttons/PriceButton.astro"
 
 const { product } = Astro.props;
 
@@ -43,7 +44,7 @@ const imageClass =
     <div>
       <span
         class="relative mb-3 ml-4 inline-block text-sm font-bold text-neutral-50 transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] group-hover:scale-110 md:ml-5 md:text-md"
-        >{product.data.description} ({product.data.price})
+        >{product.data.description} <PriceButton/> AED {product.data.main.price}
       </span>
     </div>
   </div>

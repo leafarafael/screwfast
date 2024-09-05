@@ -43,7 +43,7 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
         id="fadeText"
         class="mb-8 max-w-prose text-pretty font-light text-neutral-700 dark:text-neutral-300 sm:text-xl"
       >
-        {product.data.main.content}
+        <!-- {product.data.main.content} -->
       </p>
     </div>
     <div
@@ -54,9 +54,14 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
           class="block text-4xl font-bold tracking-tighter text-neutral-800 dark:text-neutral-200 sm:text-5xl md:text-6xl lg:text-7xl"
         >
           {product.data.title} 
+          
         </h1>
         <p class="text-lg text-neutral-600 dark:text-neutral-400">
-          {product.data.description}
+          {product.data.description}       
+        </p>
+
+        <p class="text-lg font-bold text-neutral-600 dark:text-neutral-400">
+          AED {product.data.main.price}       
         </p>
       </div>
       <div>
@@ -137,7 +142,7 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
         <div class="mx-auto max-w-[85rem] px-4 pb-10 sm:px-6 lg:px-8 lg:pb-14">
           <div class="grid w-full grid-cols-1 gap-x-16 md:grid-cols-2">
             <div class="max-w-md space-y-6">
-              {
+              <!-- {
                 product.data.specificationsLeft.map((spec) => (
                   <div>
                     <h3 class="block font-bold text-neutral-800 dark:text-neutral-200">
@@ -148,7 +153,37 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
                     </p>
                   </div>
                 ))
-              }
+              } -->
+              <div class="mx-auto mb-20 flex w-full md:mb-28 2xl:w-5/5">
+                <div
+                  class="relative left-12 top-12 z-10 overflow-hidden rounded-xl shadow-lg md:left-12 md:top-16 md:-ml-12 lg:ml-0"
+                >
+                  {
+                    product.data.blueprints.first && (
+                      <Image
+                        src={product.data.blueprints.first}
+                        class="h-full w-full object-cover object-center"
+                        alt="Blueprint Illustration"
+                        format={"png"}
+                      />
+                    )
+                  }
+                </div>
+          
+                <div class="relative right-12 overflow-hidden rounded-xl shadow-xl">
+                  {
+                    product.data.blueprints.second && (
+                      <Image
+                        src={product.data.blueprints.second}
+                        class="h-full w-full object-cover object-center"
+                        alt="Blueprint Illustration"
+                        format={"png"}
+                      />
+                    )
+                  }
+                </div>
+              </div>
+
             </div>
             {
               product.data.specificationsRight ? (

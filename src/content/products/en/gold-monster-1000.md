@@ -1,9 +1,10 @@
 ---
 title: "GOLD MONSTER 1000"
 description: "Entry Level, Universal Gold Detector" 
-price: "AED 2,500"
+
 main:
   id: 2
+  price: 2500
   content: |
     Introducing the SF-AB A765 Assorted Screw Set – the ultimate solution for your screw fastening needs. This comprehensive set includes a wide variety of screws meticulously curated to tackle various projects with ease and precision.
   imgCard: "@/images/gold-monster-1000.png"

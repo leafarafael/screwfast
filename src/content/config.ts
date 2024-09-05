@@ -8,9 +8,9 @@ const productsCollection = defineCollection({
     schema: ({ image }) => z.object({
     title: z.string(),
     description: z.string(),
-    price: z.string(),
     main: z.object({
       id: z.number(),
+      price: z.number(),
       content: z.string(),
       imgCard: image(),
       imgMain: image(),

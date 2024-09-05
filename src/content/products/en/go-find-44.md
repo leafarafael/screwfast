@@ -1,11 +1,12 @@
 ---
 title: "Go-Find 44"
 description: "Adventure starts here" 
-price: "AED 850"
+
 main:
   id: 6
+  price: 850
   content: |
-    Introducing the SF-AB A765 Assorted Screw Set – the ultimate solution for your screw fastening needs. This comprehensive set includes a wide variety of screws meticulously curated to tackle various projects with ease and precision.
+
   imgCard: "@/images/go-find-44.png"
   imgMain: "@/images/go-find-44.png"
   imgAlt: "Mockup boxes of assorted screw set"
@@ -20,18 +21,20 @@ tabs:
     dataTab: "#tabs-with-card-3"
     title: "Blueprints"
 longDescription:
-  title: "Fully automatic detector for ultra-effi cient gold recovery"
+  title: "Search deeper and find the treasure other people miss"
   subTitle: |
-    The GOLD MONSTER 1000 turns beginners into experts with fully automatic operation in an easy-to-use, high performance detector.
+    When you want that edge, that advantage and a powerful sense of discovering more than you thought possible, GO-FIND 44 takes you there. Prepare to unearth what lies deep beneath your feet with your GO-FIND 44.
   btnTitle: "Contact sales to learn more"
   btnURL: "#"
 descriptionList:
-  - title: "Wide Variety"
-    subTitle: "Includes a diverse range of screw types and sizes to accommodate various applications and materials."
-  - title: "Ease of Use"
-    subTitle: "Each screw is designed for effortless installation, ensuring hassle-free fastening every time."
-  - title: "Convenience"
-    subTitle: "Eliminates the need for multiple trips to the hardware store, saving time and effort on your projects."
+  - title: "Superior Performance"
+    subTitle: "Advanced technology and innovative features for performance to the MAX."
+  - title: "Compact & No Assembly"
+    subTitle: "It’s easy. There’s nothing to assemble and no loose parts that can get lost."
+  - title: "Ultra Lightweight"
+    subTitle: "At only 2.3 lbs (1.06 kg), it’s the lightest high-performance detector available*."
+  - title: "Easy-Trak Automatic"
+    subTitle: "Auto ground-tracking reduces noise interference and maximises target signals."
 specificationsLeft:
   - title: "Material"
     subTitle: "Constructed from high-quality materials such as stainless steel, ensuring durability and corrosion resistance."
@@ -44,14 +47,22 @@ specificationsLeft:
 tableData:
   - feature: ["Specification", "Value"]
     description:
-      - ["Key Technology", "Ultra-wide dynamic range 45kHz VLF"]
-      - ["Detect Modes", "Gold (Iron reject), Deep All-Metal"]
-      - ["Discrimination", "Gold Chance Indicator (high/low)"]
-      - ["Ground Balance", "Automatic (Easy-Trak)"]
-      - ["Noise Cancel", "Automatic (On start-up)"]
-      - ["", ""]
-      - ["", ""]
-      - ["", ""]
+      - ["Portability", "Collapsible Body"]
+      - ["Find Modes", "3"]
+      - ["Search Coil", "Large (10-inch waterproof coil)"]
+      - ["Treasure View", "5 LEDs"]
+      - ["Backlight", "Yes"]
+      - ["Sensitivity", "4 Levels"]
+      - ["Volume", "5 Volume Levels"]
+      - ["Pinpoint Locating", "Yes"]
+      - ["Bluetooth", "Yes"]
+      - ["Smartphone App", "Standard Version"]
+      - ["Batteries", "4xAA Batteries"]
+      - ["Length Collapsed", "21.9 in / 555 mm"]
+      - ["Length Extended", "51.4 in / 1305 mm"]
+      - ["Weight", "2.3 lbs / 1.06 kg"]
+
+      
 blueprints:
   first: "@/images/blueprint-1.avif"
   second: "@/images/blueprint-2.avif"
