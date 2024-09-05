@@ -1,12 +1,13 @@
 ---
-title: "SF-AB A765"
-description: "Assorted Screw Set" 
+title: "Go-Find 44"
+description: "Adventure starts here" 
+price: "AED 850"
 main:
-  id: 2
+  id: 6
   content: |
     Introducing the SF-AB A765 Assorted Screw Set – the ultimate solution for your screw fastening needs. This comprehensive set includes a wide variety of screws meticulously curated to tackle various projects with ease and precision.
-  imgCard: "@/images/product-image-2.avif"
-  imgMain: "@/images/product-image-main-2.avif"
+  imgCard: "@/images/go-find-44.png"
+  imgMain: "@/images/go-find-44.png"
   imgAlt: "Mockup boxes of assorted screw set"
 tabs:
   - id: "tabs-with-card-item-1"
@@ -19,9 +20,9 @@ tabs:
     dataTab: "#tabs-with-card-3"
     title: "Blueprints"
 longDescription:
-  title: "Versatile Screw Fastening Solutions"
+  title: "Fully automatic detector for ultra-effi cient gold recovery"
   subTitle: |
-    The SF-AB A765 Assorted Screw Set offers unmatched versatility and convenience, making it the perfect choice for DIY enthusiasts and professionals alike. With a comprehensive selection of screws, you'll always have the right fastener for the job.
+    The GOLD MONSTER 1000 turns beginners into experts with fully automatic operation in an easy-to-use, high performance detector.
   btnTitle: "Contact sales to learn more"
   btnURL: "#"
 descriptionList:
@@ -43,13 +44,16 @@ specificationsLeft:
 tableData:
   - feature: ["Specification", "Value"]
     description:
-      - ["Length (mm)", "Various"]
-      - ["Weight (g)", "N/A"]
-      - ["Material", "Stainless Steel"]
-      - ["Finish", "Assorted"]
-      - ["Package Contents", "Various screws in a set"]
+      - ["Key Technology", "Ultra-wide dynamic range 45kHz VLF"]
+      - ["Detect Modes", "Gold (Iron reject), Deep All-Metal"]
+      - ["Discrimination", "Gold Chance Indicator (high/low)"]
+      - ["Ground Balance", "Automatic (Easy-Trak)"]
+      - ["Noise Cancel", "Automatic (On start-up)"]
+      - ["", ""]
+      - ["", ""]
+      - ["", ""]
 blueprints:
   first: "@/images/blueprint-1.avif"
   second: "@/images/blueprint-2.avif"
-slug: a765  
+slug: go-find-44  
 ---

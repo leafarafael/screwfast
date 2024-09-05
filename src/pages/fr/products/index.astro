@@ -11,12 +11,14 @@ import TestimonialsSectionAlt from "@components/sections/testimonials/Testimonia
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 
+const frProducts = await getCollection("products", ({ id }) => {
+  return id.startsWith("fr/");
+});
+
 // Fetching all the product related content and sorting it by main.id
-const product: CollectionEntry<"products">[] = (
-  await getCollection("products")
-).sort(
+const product: CollectionEntry<"products">[] = frProducts.sort(
   (a: CollectionEntry<"products">, b: CollectionEntry<"products">) =>
-    a.data.main.id - b.data.main.id
+    a.data.main.id - b.data.main.id,
 );
 
 // Define variables for page content

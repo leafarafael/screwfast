@@ -12,18 +12,27 @@ import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import { SITE } from "@data/constants";
 
+const englishProducts = await getCollection("products", ({ id }) => {
+  return id.startsWith("en/");
+});
+
+
+
+
 // Fetching all the product related content and sorting it by main.id
-const product: CollectionEntry<"products">[] = (
-  await getCollection("products")
-).sort(
+const product: CollectionEntry<"products">[] = englishProducts.sort(
   (a: CollectionEntry<"products">, b: CollectionEntry<"products">) =>
     a.data.main.id - b.data.main.id,
 );
 
+
+
+
 // Define variables for page content
-const title: string = "Products";
-const subTitle: string =
-  "Explore the durability and precision of ScrewFast tools, designed for both professionals and enthusiasts. Each of our products is crafted with precision and built to last, ensuring you have the right tool for every job.";
+const title: string = "Gold and Treasure Detectors";
+const subTitle: string ="Dig deeper, dig less trash and find more treasure than ever before";
+
+
 
 // Testimonial data that will be rendered in the component
 const testimonials = [
@@ -115,6 +124,12 @@ const pageTitle: string = `Products | ${SITE.title}`;
       }
     </section>
   </div>
+
+
+  <!-- Treasure Detectors -->
+
+
+  
   <!--Features statistics section-->
   <FeaturesStatsAlt
     title="Why Choose ScrewFast?"

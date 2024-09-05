@@ -1,0 +1,59 @@
+---
+title: "Excalibur II"
+description: "Top underwater performance" 
+price: "AED 5,000"
+main:
+  id: 11
+  content: |
+    Introducing the SF-AB A765 Assorted Screw Set – the ultimate solution for your screw fastening needs. This comprehensive set includes a wide variety of screws meticulously curated to tackle various projects with ease and precision.
+  imgCard: "@/images/excalibur.png"
+  imgMain: "@/images/excalibur.png"
+  imgAlt: "Mockup boxes of assorted screw set"
+tabs:
+  - id: "tabs-with-card-item-1"
+    dataTab: "#tabs-with-card-1"
+    title: "Description"
+  - id: "tabs-with-card-item-2"
+    dataTab: "#tabs-with-card-2"
+    title: "Specifications"
+  - id: "tabs-with-card-item-3"
+    dataTab: "#tabs-with-card-3"
+    title: "Blueprints"
+longDescription:
+  title: "Fully automatic detector for ultra-effi cient gold recovery"
+  subTitle: |
+    The GOLD MONSTER 1000 turns beginners into experts with fully automatic operation in an easy-to-use, high performance detector.
+  btnTitle: "Contact sales to learn more"
+  btnURL: "#"
+descriptionList:
+  - title: "Wide Variety"
+    subTitle: "Includes a diverse range of screw types and sizes to accommodate various applications and materials."
+  - title: "Ease of Use"
+    subTitle: "Each screw is designed for effortless installation, ensuring hassle-free fastening every time."
+  - title: "Convenience"
+    subTitle: "Eliminates the need for multiple trips to the hardware store, saving time and effort on your projects."
+specificationsLeft:
+  - title: "Material"
+    subTitle: "Constructed from high-quality materials such as stainless steel, ensuring durability and corrosion resistance."
+  - title: "Assortment"
+    subTitle: "Contains a generous assortment of screws, including wood screws, machine screws, and sheet metal screws."
+  - title: "Quantity"
+    subTitle: "Each set includes a sufficient quantity of screws to handle a wide range of projects and tasks."
+  - title: "Sizes"
+    subTitle: "Available in various sizes to suit different project requirements, ensuring compatibility and versatility."
+tableData:
+  - feature: ["Specification", "Value"]
+    description:
+      - ["Key Technology", "Ultra-wide dynamic range 45kHz VLF"]
+      - ["Detect Modes", "Gold (Iron reject), Deep All-Metal"]
+      - ["Discrimination", "Gold Chance Indicator (high/low)"]
+      - ["Ground Balance", "Automatic (Easy-Trak)"]
+      - ["Noise Cancel", "Automatic (On start-up)"]
+      - ["", ""]
+      - ["", ""]
+      - ["", ""]
+blueprints:
+  first: "@/images/blueprint-1.avif"
+  second: "@/images/blueprint-2.avif"
+slug: Excalibur II
+---

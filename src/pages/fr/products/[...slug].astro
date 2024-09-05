@@ -5,6 +5,7 @@ import ProductTabBtn from "@components/ui/buttons/ProductTabBtn.astro";
 import PrimaryCTA from "@components/ui/buttons/PrimaryCTA.astro";
 import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
 import { SITE } from "@data/constants";
 
 // Global declaration for gsap animation library
@@ -15,8 +16,8 @@ declare global {
 }
 // This gets the static paths for all the unique products
 export async function getStaticPaths() {
-  const productEntries = await getCollection("products", ({id}) =>{
-    return id.startsWith("en/")
+  const productEntries = await getCollection("products", ({id}) => {
+    return id.startsWith("fr/");
   });
   return productEntries.map((product) => ({
     params: { slug: product.slug },
@@ -26,7 +27,11 @@ export async function getStaticPaths() {
 
 const { product } = Astro.props;
 
-
+const productEntries: CollectionEntry<"products">[] = await getCollection("products",
+  ({ id }) => {
+    return id.startsWith("fr/");
+  }
+);
 
 const pageTitle: string = `${product.data.title} | ${SITE.title}`;
 ---
@@ -53,7 +58,7 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
         <h1
           class="block text-4xl font-bold tracking-tighter text-neutral-800 dark:text-neutral-200 sm:text-5xl md:text-6xl lg:text-7xl"
         >
-          {product.data.title} 
+          {product.data.title}
         </h1>
         <p class="text-lg text-neutral-600 dark:text-neutral-400">
           {product.data.description}
@@ -63,9 +68,9 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
         <Image
           id="fadeInMoveRight"
           src={product.data.main.imgMain}
-          class="w-[1000px]"
+          class="w-[600px]"
           alt={product.data.main.imgAlt}
-          format={"png"}
+          format={"avif"}
           loading={"eager"}
         />
       </div>
